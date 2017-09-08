@@ -115,7 +115,7 @@ def custom_score_3(game, player):
     #evaluation heuristic based on minimizing opponent's legal moves
     opponent_moves_left = len(game.get_legal_moves(game.get_opponent(player)))
     return float(8 - opponent_moves_left)
-
+    
 class IsolationPlayer:
     """Base class for minimax and alphabeta agents -- this class is never
     constructed or tested directly.
